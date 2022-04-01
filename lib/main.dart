@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'screen/welcome_screen/welcome.dart';
+import 'screen/welcome_screen/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() {
@@ -17,6 +17,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: WelcomeScreen());
+        home: LoginScreen());
   }
 }

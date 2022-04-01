@@ -7,7 +7,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:get/get.dart';
 import '../constant/ui_helper.dart';
-import '../welcome_screen/welcome.dart';
+import '../welcome_screen/login_screen.dart';
 import 'package:intl/intl.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -182,7 +182,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                       Fluttertoast.showToast(
                                           msg: "สร้างบัญชีผู้ใช้เสร็จสิ้น",
                                           gravity: ToastGravity.TOP);
-                                      Get.to(() => WelcomeScreen());
+                                      Get.to(() => LoginScreen());
                                     });
                                   } on FirebaseAuthException catch (e) {
                                     print(e.code);
