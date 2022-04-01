@@ -1,11 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/controllers/question_controller.dart';
-import 'package:flutter_application_1/model/local_profile.dart';
-import 'package:flutter_application_1/screen/quiz/quiz_main.dart';
 import 'package:get/get.dart';
 import '../welcome_screen/homepage.dart';
-import 'quiz_home.dart';
 import 'package:flutter_application_1/model/score.dart';
 import 'package:intl/intl.dart';
 
@@ -34,14 +31,17 @@ class ScoreScreen extends StatelessWidget {
     score.full_score = _qnController.questions.length;
     score.user_score = _qnController.NumOfCorrectAns;
 
-    FirebaseFirestore.instance.collection('Score').add({
-      "username" : score.username,
-      "topic" : score.topic,
-      "date" : score.date,
-      "score_full" : score.full_score,
-      "score_user" : score.user_score,
-    });
-
+    FirebaseFirestore.instance
+        .collection('Score')
+        .doc('${score.date} ${score.username}')
+        .set({
+          "username": score.username,
+          "topic": score.topic,
+          "date": score.date,
+          "score_full": score.full_score,
+         "score_user": score.user_score,
+        });
+        
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,

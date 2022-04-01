@@ -50,25 +50,17 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    /*Align(
-                      alignment: Alignment.topRight,
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 52,
-                        width: 52,
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey),
-                          color: Colors.white,
-                          shape: BoxShape.circle,
-                        ),
-                        child: Icon(Icons.logout_outlined),
-                      ),
-                    ),*/
                     ListTile(
                       trailing: PopupMenuButton(
+                        child: Icon(Icons.logout),
                         itemBuilder: (context) => <PopupMenuItem<String>>[
                           PopupMenuItem(
-                            child: Text("ออกจากระบบ"),
+                            child: Row(
+                              children: [
+                                Icon(Icons.logout_outlined, color: Colors.black),
+                                Text(" ออกจากระบบ")
+                              ],
+                            ),
                             onTap: () {
                               auth.signOut().then(((value) {
                                 Get.to(() => LoginScreen());
