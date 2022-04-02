@@ -1,0 +1,2044 @@
+Launching lib/main.dart on iPhone 11 in debug mode...
+Xcode build done.                                           240.4s
+Failed to build iOS app
+Error output from Xcode build:
+↳
+    objc[27686]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x20fa4deb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x103ba44f8). One of the two will be used. Which one is undefined.
+    objc[27686]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x20fa4df00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x103ba4548). One of the two will be used. Which one is undefined.
+    objc[27686]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x20fa4df50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x103ba4598). One of the two will be used. Which one is undefined.
+    objc[27686]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x20fa4dfa0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x103ba45e8). One of the two will be used. Which one is undefined.
+    objc[27686]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x20fa4dff0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x103ba4638). One of the two will be used. Which one is undefined.
+    objc[27686]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x20fa4e040) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x103ba4688). One of the two will be used. Which one is undefined.
+    2022-04-02 17:09:51.449 xcodebuild[27686:244399] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+    2022-04-02 17:09:51.449 xcodebuild[27686:244399] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+    ** BUILD FAILED **
+Xcode's output:
+↳
+    Writing result bundle at path:
+    	/var/folders/0q/y3qjg96s6611qg8ht8stt80w0000gn/T/flutter_tools.vF8XwW/flutter_ios_build_temp_diriAyyRk/temporary_xcresult_bundle
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/filters/client_channel/xds/xds_channel_secure.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/filters/client_channel/xds/xds_channel_secure.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/writing.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.cc:32:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/tls/tls_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/tls/tls_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/stream_lists.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl_utils.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:23:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/server/secure/server_secure_chttp2.cc:35:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/server_auth_filter.cc:26:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/security_handshaker.cc:35:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.cc:28:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/security_connector.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/client/secure/secure_channel_create.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/plugin/plugin_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/plugin/plugin_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/parsing.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/oauth2/oauth2_credentials.cc:22:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/oauth2/oauth2_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/local/local_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/local/local_security_connector.h:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/local/local_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/local/local_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/jwt/jwt_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/jwt/jwt_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/surface/init_secure.cc:27:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/incoming_metadata.cc:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/iam/iam_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/iam/iam_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/http/httpcli_security_connector.cc:35:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/hpack_parser.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/filters/client_channel/lb_policy/grpclb/grpclb_channel_secure.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/google_default_credentials.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_window_update.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_settings.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_rst_stream.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_ping.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_goaway.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_data.cc:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/flow_control.cc:32:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/fake/fake_security_connector.cc:37:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/fake/fake_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/fake/fake_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials_metadata.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/credentials_generic.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/google_default_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/composite/composite_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/composite/composite_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/client_auth_filter.cc:32:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/chttp2_transport.cc:36:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/server/chttp2_server.cc:38:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/alts/alts_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/alts/alts_security_connector.h:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/alts/alts_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/alts/alts_credentials.h:27:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/writing.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.cc:32:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/tls/tls_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/tls/tls_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/stream_lists.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl_utils.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:23:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/server/secure/server_secure_chttp2.cc:35:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/server_auth_filter.cc:26:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/security_handshaker.cc:35:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.cc:28:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/security_connector.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/client/secure/secure_channel_create.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/plugin/plugin_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/plugin/plugin_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/parsing.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/oauth2/oauth2_credentials.cc:22:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/oauth2/oauth2_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/local/local_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/local/local_security_connector.h:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/local/local_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/local/local_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/jwt/jwt_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/jwt/jwt_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/surface/init_secure.cc:27:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/incoming_metadata.cc:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/iam/iam_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/iam/iam_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/http/httpcli_security_connector.cc:35:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/hpack_parser.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/filters/client_channel/lb_policy/grpclb/grpclb_channel_secure.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/google_default_credentials.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_window_update.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_settings.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_rst_stream.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_ping.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_goaway.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_data.cc:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/flow_control.cc:32:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/fake/fake_security_connector.cc:37:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/fake/fake_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/fake/fake_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials_metadata.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/credentials_generic.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/google_default_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/composite/composite_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/composite/composite_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/client_auth_filter.cc:32:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/chttp2_transport.cc:36:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/server/chttp2_server.cc:38:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/alts/alts_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/alts/alts_security_connector.h:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/alts/alts_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/alts/alts_credentials.h:27:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/filters/client_channel/xds/xds_channel_secure.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/writing.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/tls/tls_security_connector.cc:32:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/tls/tls_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/tls/tls_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/stream_lists.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl_utils.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:23:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/ssl/ssl_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:60:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_ssl_server_config
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:61:51: note: type is not C-compatible due to this default member initializer
+      tsi_ssl_pem_key_cert_pair* pem_key_cert_pairs = nullptr;
+                                                      ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/ssl/ssl_security_connector.h:66:3: note: type is given name 'grpc_ssl_server_config' for linkage purposes by this typedef declaration
+    } grpc_ssl_server_config;
+      ^
+    2 warnings generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/server/secure/server_secure_chttp2.cc:35:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/server_auth_filter.cc:26:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/security_handshaker.cc:35:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.cc:28:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/security_connector.cc:34:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/client/secure/secure_channel_create.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/plugin/plugin_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/plugin/plugin_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/parsing.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/oauth2/oauth2_credentials.cc:22:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/oauth2/oauth2_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/local/local_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/local/local_security_connector.h:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/local/local_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/local/local_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/jwt/jwt_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/jwt/jwt_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/surface/init_secure.cc:27:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/incoming_metadata.cc:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/iam/iam_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/iam/iam_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/http/httpcli_security_connector.cc:35:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/hpack_parser.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/filters/client_channel/lb_policy/grpclb/grpclb_channel_secure.cc:34:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/google_default_credentials.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_window_update.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_settings.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_rst_stream.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_ping.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_goaway.cc:22:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/frame_data.cc:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/flow_control.cc:32:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/fake/fake_security_connector.cc:37:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/fake/fake_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/fake/fake_credentials.h:24:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials_metadata.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/credentials_generic.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/google_default/google_default_credentials.h:25:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.cc:21:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/composite/composite_credentials.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/composite/composite_credentials.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/transport/client_auth_filter.cc:32:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/chttp2_transport.cc:36:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/context_list.h:26:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/server/chttp2_server.cc:38:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:109:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_chttp2_ping_queue
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:110:52: note: type is not C-compatible due to this default member initializer
+      grpc_closure_list lists[GRPC_CHTTP2_PCL_COUNT] = {};
+                                                       ^~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/ext/transport/chttp2/transport/internal.h:112:3: note: type is given name 'grpc_chttp2_ping_queue' for linkage purposes by this typedef declaration
+    } grpc_chttp2_ping_queue;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/alts/alts_security_connector.cc:21:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/security_connector/alts/alts_security_connector.h:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-Core/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/server/secure_server_credentials.cc:26:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/client/secure_credentials.cc:19:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/client/secure_credentials.h:29:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_create_auth_context.cc:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.cc:19:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/server/secure_server_credentials.cc:26:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/client/secure_credentials.cc:19:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/client/secure_credentials.h:29:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_create_auth_context.cc:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.cc:19:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/server/secure_server_credentials.cc:26:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/client/secure_credentials.cc:19:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/client/secure_credentials.h:29:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_create_auth_context.cc:24:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.cc:19:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/cpp/common/secure_auth_context.h:25:
+    In file included from /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/context/security_context.h:28:
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:205:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+    typedef struct {
+                  ^
+                   grpc_credentials_mdelem_array
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:206:21: note: type is not C-compatible due to this default member initializer
+      grpc_mdelem* md = nullptr;
+                        ^~~~~~~
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/gRPC-C++/src/core/lib/security/credentials/credentials.h:208:3: note: type is given name 'grpc_credentials_mdelem_array' for linkage purposes by this typedef declaration
+    } grpc_credentials_mdelem_array;
+      ^
+    1 warning generated.
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Runner/GeneratedPluginRegistrant.m:30:9: fatal error: module 'fluttertoast' not found
+    @import fluttertoast;
+     ~~~~~~~^~~~~~~~~~~~
+    1 error generated.
+    note: Using new build system
+    note: Planning
+    note: Build preparation complete
+    note: Building targets in dependency order
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/Pods.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 15.4.99. (in target 'leveldb-library' from project 'Pods')
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/Pods.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 15.4.99. (in target 'gRPC-C++' from project 'Pods')
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/Pods.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 15.4.99. (in target 'gRPC-Core' from project 'Pods')
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/Pods.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 15.4.99. (in target 'gRPC-C++-gRPCCertificates-Cpp' from project 'Pods')
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/Pods.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 15.4.99. (in target 'abseil' from project 'Pods')
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/Pods.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 15.4.99. (in target 'Toast' from project 'Pods')
+    /Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Pods/Pods.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 15.4.99. (in target 'BoringSSL-GRPC' from project 'Pods')
+    Result bundle written to path:
+    	/var/folders/0q/y3qjg96s6611qg8ht8stt80w0000gn/T/flutter_tools.vF8XwW/flutter_ios_build_temp_diriAyyRk/temporary_xcresult_bundle
+Parse Issue (Xcode): Module 'fluttertoast' not found
+/Users/gingkanyanat/Documents/GitHub/Flashcard/ios/Runner/GeneratedPluginRegistrant.m:29:8
+Could not build the application for the simulator.
+Error launching application on iPhone 11.
+Exited (sigterm)
