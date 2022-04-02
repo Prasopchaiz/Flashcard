@@ -101,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           verticalSpaceMedium,
                           SizedBox(
                             child: Row(
-                              textDirection: TextDirection.rtl,
+                              textDirection : TextDirection.rtl,
                               children: [
                                 SizedBox(
                                   child: ElevatedButton(
