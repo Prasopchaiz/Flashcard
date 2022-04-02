@@ -101,17 +101,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           verticalSpaceMedium,
                           SizedBox(
                             child: Row(
+                              textDirection: TextDirection.rtl,
                               children: [
-                                SizedBox(
-                                  width: 120,
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    Get.to(() => RegisterScreen());
-                                  },
-                                  child: Text("สมัครสมาชิก"),
-                                ),
-                                horizontalSpaceTiny,
                                 SizedBox(
                                   child: ElevatedButton(
                                     child: Text("ลงชื่อเข้าใช้",
@@ -140,7 +131,14 @@ class _LoginScreenState extends State<LoginScreen> {
                                       }
                                     },
                                   ),
-                                )
+                                ),
+                                horizontalSpaceTiny,
+                                TextButton(
+                                  onPressed: () {
+                                    Get.to(() => RegisterScreen());
+                                  },
+                                  child: Text("สมัครสมาชิก"),
+                                ),
                               ],
                             ),
                           ),
